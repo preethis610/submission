@@ -1,0 +1,13 @@
+<section class="carousel-wrapper" class="carousel-wrapper-style">
+    <div class="carousel-section">
+        <div class="info-text">What are you <b>here to do?</b></div>
+        <div>
+            <ul class="carousel-inner" #carousel (dragend)="nextOrPrev($event)">
+                <li *ngFor="let item of items;" class="carousel-item">
+                    <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <app-button (nextClick)="next($event)" (prevClick)="prev($event)"></app-button>
+</section>

@@ -1,0 +1,12 @@
+<div class="item" [ngClass]="cardContent.id === isCenterCard ? 'center-card':''">
+    <div class="img-section-center">
+        <img *ngIf='cardContent.id !== isCenterCard' src="{{cardContent.thumbnail}}" />
+        <img *ngIf='cardContent.id === isCenterCard' src="{{cardContent.pic}}" />
+    </div>
+    <div [ngClass]="cardContent.id === isCenterCard ? 'title-style-center-card':'title-style'">
+        {{cardContent.title}}
+    </div>
+    <div *ngIf='cardContent.id === isCenterCard' class="help-txt">
+        {{cardContent.help}}
+    </div>
+</div>

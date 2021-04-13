@@ -1,0 +1,11 @@
+.button-section{
+    margin-top: -4em;
+    position:relative;
+    font-size: small;
+}
+.prev-icon{
+    margin-left: 26%;
+}
+.next-icon{
+    margin-left: 44%;
+}

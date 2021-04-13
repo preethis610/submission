@@ -1,0 +1,35 @@
+.header-style{
+    background-color: white;
+    height: 58px;
+    margin: -0.5em;
+}
+.logo-img{
+    border: 3px solid #fff;
+    margin-left: 72%;
+}
+#wrapper {
+    width:100%;
+    background-color: white;
+    height: 58px;
+    font-size: 14px;
+    }
+    
+    #first-div {
+        width: 30%;
+        margin: 0px;
+        float: left;
+    }
+    
+    #second-div {
+        width: 70%;
+        margin: -19px;
+        float: left;
+        padding-top: 3%;
+    }
+    .search-icon{
+        padding-left: 20%;
+        font-size: 12px;
+    }
+    .padding-l15{
+padding-left:15%;
+    }

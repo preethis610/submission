@@ -1,0 +1,9 @@
+  <app-header></app-header>
+   <app-carousel [totalVisibleCount]= "totalVisibleCount" (changeCenterCard)="centerCardUpdate($event)">
+     <ng-container  *ngFor="let item of items;let i = index">
+       <ng-container  *carouselItem>
+            <app-card  [cardContent]="item" [isCenterCard]="centerCard"></app-card> 
+       </ng-container>
+     </ng-container>
+   </app-carousel>
+ 
